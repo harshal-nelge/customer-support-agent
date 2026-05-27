@@ -1,0 +1,103 @@
+======================================================
+         SHOPSMART E-COMMERCE — REFUND POLICY
+              Version 2.1 | January 2025
+======================================================
+
+1. GENERAL RETURN POLICY
+------------------------
+1.1  Customers may request a refund within 30 calendar days
+     from the date of delivery.
+1.2  All refunds are issued to the original payment method only.
+1.3  Refund processing takes 5–10 business days after approval.
+1.4  Shipping costs are non-refundable unless the item arrived
+     defective or the wrong item was shipped.
+
+2. FINAL SALE ITEMS
+-------------------
+2.1  Items marked as "Final Sale" CANNOT be returned or refunded
+     under any circumstances.
+2.2  This includes clearance items, limited-edition products,
+     and items explicitly marked final sale at checkout.
+
+3. CATEGORY-SPECIFIC RULES
+---------------------------
+3.1  ELECTRONICS
+     - Return window: 15 days from delivery (not 30).
+     - Item must be unopened and in original sealed packaging.
+     - Opened electronics are non-returnable.
+     - A 15% restocking fee applies to all electronics returns.
+     - Manufacturer warranty claims must be handled directly
+       with the manufacturer.
+
+3.2  CLOTHING & APPAREL
+     - Return window: 30 days from delivery.
+     - Tags must still be attached; item must be unworn/unwashed.
+     - Undergarments and swimwear are always final sale.
+     - No restocking fee.
+
+3.3  HOME & KITCHEN
+     - Return window: 30 days from delivery.
+     - Item must be unused and in original packaging.
+     - Assembled furniture cannot be returned.
+     - A 10% restocking fee applies.
+
+3.4  BOOKS & MEDIA
+     - Return window: 30 days from delivery.
+     - Item must be in original condition.
+     - Digital codes (if included) must be unredeemed.
+
+3.5  PERISHABLE GOODS
+     - Perishable items are NON-REFUNDABLE.
+     - Exception: items that arrived spoiled or visibly damaged
+       on delivery may be refunded with photo evidence.
+
+3.6  SPORTS & OUTDOORS
+     - Return window: 30 days from delivery.
+     - Item must be unused.
+     - Safety equipment (helmets, pads) that has been worn
+       is non-returnable for hygiene and liability reasons.
+
+4. ESCALATION RULES
+--------------------
+4.1  Any refund request where the refund amount exceeds $500
+     MUST be escalated to a human supervisor for manual review.
+     The AI agent is NOT authorized to approve refunds over $500.
+4.2  Escalated cases are typically resolved within 24–48 hours.
+
+5. DAMAGED OR DEFECTIVE ITEMS
+------------------------------
+5.1  Items that arrived damaged or defective are eligible for a
+     full refund REGARDLESS of the return window.
+5.2  Photo evidence of the damage is required.
+5.3  Shipping costs are also refunded for defective items.
+5.4  This does NOT override final-sale status — final sale items
+     sold "as-is" with a known/acknowledged defect are still
+     non-refundable.
+
+6. WRONG ITEM SHIPPED
+----------------------
+6.1  If the customer received the wrong item, they are entitled
+     to a full refund plus return shipping reimbursement.
+6.2  This overrides the normal return window.
+
+7. FRAUD PREVENTION & LIMITS
+-----------------------------
+7.1  Each customer is limited to a maximum of 3 refunds within
+     any rolling 90-day period.
+7.2  Exceeding this limit requires human review regardless of
+     the refund amount.
+7.3  A refund request where the amount exceeds the original
+     order total will be automatically denied.
+
+8. MEMBERSHIP BENEFITS
+-----------------------
+8.1  STANDARD members: no additional return benefits.
+8.2  PREMIUM members: return window extended by 15 extra days
+     on top of the category-specific window.
+8.3  VIP members: return window extended by 30 extra days
+     on top of the category-specific window, plus priority
+     processing.
+
+======================================================
+         END OF REFUND POLICY — CONFIDENTIAL
+======================================================
