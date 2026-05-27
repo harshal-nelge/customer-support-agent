@@ -1,0 +1,596 @@
+[
+  {
+    "order_id": "ORD-2024-001",
+    "customer_id": "CUST001",
+    "items": [
+      {"name": "Wireless Noise-Canceling Headphones", "category": "electronics", "price": 249.99, "quantity": 1, "is_final_sale": false}
+    ],
+    "order_date": "2025-04-10",
+    "delivery_date": "2025-04-15",
+    "status": "delivered",
+    "total_amount": 262.49,
+    "shipping_cost": 12.50,
+    "payment_method": "credit_card"
+  },
+  {
+    "order_id": "ORD-2024-002",
+    "customer_id": "CUST001",
+    "items": [
+      {"name": "Silk Blouse", "category": "clothing", "price": 89.99, "quantity": 1, "is_final_sale": false},
+      {"name": "Linen Pants", "category": "clothing", "price": 65.00, "quantity": 1, "is_final_sale": false}
+    ],
+    "order_date": "2025-05-01",
+    "delivery_date": "2025-05-05",
+    "status": "delivered",
+    "total_amount": 164.99,
+    "shipping_cost": 10.00,
+    "payment_method": "credit_card"
+  },
+  {
+    "order_id": "ORD-2024-003",
+    "customer_id": "CUST002",
+    "items": [
+      {"name": "Running Shoes", "category": "sports_and_outdoors", "price": 129.99, "quantity": 1, "is_final_sale": false}
+    ],
+    "order_date": "2025-03-15",
+    "delivery_date": "2025-03-20",
+    "status": "delivered",
+    "total_amount": 139.99,
+    "shipping_cost": 10.00,
+    "payment_method": "debit_card"
+  },
+  {
+    "order_id": "ORD-2024-004",
+    "customer_id": "CUST002",
+    "items": [
+      {"name": "Clearance Winter Jacket", "category": "clothing", "price": 199.99, "quantity": 1, "is_final_sale": true}
+    ],
+    "order_date": "2025-04-20",
+    "delivery_date": "2025-04-25",
+    "status": "delivered",
+    "total_amount": 209.99,
+    "shipping_cost": 10.00,
+    "payment_method": "credit_card"
+  },
+  {
+    "order_id": "ORD-2024-005",
+    "customer_id": "CUST003",
+    "items": [
+      {"name": "4K Smart TV 55-inch", "category": "electronics", "price": 699.99, "quantity": 1, "is_final_sale": false}
+    ],
+    "order_date": "2025-05-10",
+    "delivery_date": "2025-05-14",
+    "status": "delivered",
+    "total_amount": 724.99,
+    "shipping_cost": 25.00,
+    "payment_method": "credit_card"
+  },
+  {
+    "order_id": "ORD-2024-006",
+    "customer_id": "CUST003",
+    "items": [
+      {"name": "Cashmere Sweater", "category": "clothing", "price": 195.00, "quantity": 2, "is_final_sale": false},
+      {"name": "Leather Belt", "category": "clothing", "price": 55.00, "quantity": 1, "is_final_sale": false}
+    ],
+    "order_date": "2025-04-01",
+    "delivery_date": "2025-04-05",
+    "status": "delivered",
+    "total_amount": 455.00,
+    "shipping_cost": 10.00,
+    "payment_method": "credit_card"
+  },
+  {
+    "order_id": "ORD-2024-007",
+    "customer_id": "CUST003",
+    "items": [
+      {"name": "Artisan Coffee Beans 2lb", "category": "perishable", "price": 34.99, "quantity": 3, "is_final_sale": false}
+    ],
+    "order_date": "2025-05-15",
+    "delivery_date": "2025-05-18",
+    "status": "delivered",
+    "total_amount": 114.97,
+    "shipping_cost": 10.00,
+    "payment_method": "debit_card"
+  },
+  {
+    "order_id": "ORD-2024-008",
+    "customer_id": "CUST004",
+    "items": [
+      {"name": "Yoga Mat Premium", "category": "sports_and_outdoors", "price": 45.99, "quantity": 1, "is_final_sale": false}
+    ],
+    "order_date": "2025-05-20",
+    "delivery_date": "2025-05-24",
+    "status": "delivered",
+    "total_amount": 53.99,
+    "shipping_cost": 8.00,
+    "payment_method": "credit_card"
+  },
+  {
+    "order_id": "ORD-2024-009",
+    "customer_id": "CUST004",
+    "items": [
+      {"name": "Bestseller Novel Collection", "category": "books_and_media", "price": 42.99, "quantity": 1, "is_final_sale": false}
+    ],
+    "order_date": "2025-04-28",
+    "delivery_date": "2025-05-02",
+    "status": "delivered",
+    "total_amount": 48.99,
+    "shipping_cost": 6.00,
+    "payment_method": "debit_card"
+  },
+  {
+    "order_id": "ORD-2024-010",
+    "customer_id": "CUST005",
+    "items": [
+      {"name": "Stainless Steel Cookware Set", "category": "home_and_kitchen", "price": 349.99, "quantity": 1, "is_final_sale": false}
+    ],
+    "order_date": "2025-05-05",
+    "delivery_date": "2025-05-10",
+    "status": "delivered",
+    "total_amount": 367.49,
+    "shipping_cost": 17.50,
+    "payment_method": "credit_card"
+  },
+  {
+    "order_id": "ORD-2024-011",
+    "customer_id": "CUST005",
+    "items": [
+      {"name": "Bluetooth Speaker Portable", "category": "electronics", "price": 79.99, "quantity": 1, "is_final_sale": false},
+      {"name": "USB-C Charging Cable 3-Pack", "category": "electronics", "price": 19.99, "quantity": 1, "is_final_sale": false}
+    ],
+    "order_date": "2025-05-18",
+    "delivery_date": "2025-05-22",
+    "status": "delivered",
+    "total_amount": 109.98,
+    "shipping_cost": 10.00,
+    "payment_method": "credit_card"
+  },
+  {
+    "order_id": "ORD-2024-012",
+    "customer_id": "CUST006",
+    "items": [
+      {"name": "Organic Green Tea Box", "category": "perishable", "price": 18.99, "quantity": 2, "is_final_sale": false}
+    ],
+    "order_date": "2025-05-12",
+    "delivery_date": "2025-05-16",
+    "status": "delivered",
+    "total_amount": 45.98,
+    "shipping_cost": 8.00,
+    "payment_method": "debit_card"
+  },
+  {
+    "order_id": "ORD-2024-013",
+    "customer_id": "CUST006",
+    "items": [
+      {"name": "Hiking Backpack 40L", "category": "sports_and_outdoors", "price": 89.99, "quantity": 1, "is_final_sale": false}
+    ],
+    "order_date": "2025-04-25",
+    "delivery_date": "2025-04-30",
+    "status": "delivered",
+    "total_amount": 99.99,
+    "shipping_cost": 10.00,
+    "payment_method": "credit_card"
+  },
+  {
+    "order_id": "ORD-2024-014",
+    "customer_id": "CUST007",
+    "items": [
+      {"name": "Designer Handbag", "category": "clothing", "price": 450.00, "quantity": 1, "is_final_sale": false}
+    ],
+    "order_date": "2025-05-08",
+    "delivery_date": "2025-05-12",
+    "status": "delivered",
+    "total_amount": 465.00,
+    "shipping_cost": 15.00,
+    "payment_method": "credit_card"
+  },
+  {
+    "order_id": "ORD-2024-015",
+    "customer_id": "CUST007",
+    "items": [
+      {"name": "Smart Watch Pro", "category": "electronics", "price": 399.99, "quantity": 1, "is_final_sale": false},
+      {"name": "Watch Band Silicone", "category": "electronics", "price": 24.99, "quantity": 2, "is_final_sale": false}
+    ],
+    "order_date": "2025-05-20",
+    "delivery_date": "2025-05-24",
+    "status": "delivered",
+    "total_amount": 462.47,
+    "shipping_cost": 12.50,
+    "payment_method": "credit_card"
+  },
+  {
+    "order_id": "ORD-2024-016",
+    "customer_id": "CUST007",
+    "items": [
+      {"name": "Luxury Scarf - Final Collection", "category": "clothing", "price": 120.00, "quantity": 1, "is_final_sale": true}
+    ],
+    "order_date": "2025-04-15",
+    "delivery_date": "2025-04-19",
+    "status": "delivered",
+    "total_amount": 130.00,
+    "shipping_cost": 10.00,
+    "payment_method": "credit_card"
+  },
+  {
+    "order_id": "ORD-2024-017",
+    "customer_id": "CUST008",
+    "items": [
+      {"name": "Cotton T-Shirt Pack of 3", "category": "clothing", "price": 39.99, "quantity": 1, "is_final_sale": false}
+    ],
+    "order_date": "2025-05-22",
+    "delivery_date": "2025-05-26",
+    "status": "delivered",
+    "total_amount": 47.99,
+    "shipping_cost": 8.00,
+    "payment_method": "debit_card"
+  },
+  {
+    "order_id": "ORD-2024-018",
+    "customer_id": "CUST008",
+    "items": [
+      {"name": "Phone Case Clear", "category": "electronics", "price": 14.99, "quantity": 1, "is_final_sale": false}
+    ],
+    "order_date": "2025-05-10",
+    "delivery_date": "2025-05-14",
+    "status": "delivered",
+    "total_amount": 20.99,
+    "shipping_cost": 6.00,
+    "payment_method": "debit_card"
+  },
+  {
+    "order_id": "ORD-2024-019",
+    "customer_id": "CUST009",
+    "items": [
+      {"name": "Stand Mixer Professional", "category": "home_and_kitchen", "price": 329.99, "quantity": 1, "is_final_sale": false}
+    ],
+    "order_date": "2025-04-05",
+    "delivery_date": "2025-04-10",
+    "status": "delivered",
+    "total_amount": 347.49,
+    "shipping_cost": 17.50,
+    "payment_method": "credit_card"
+  },
+  {
+    "order_id": "ORD-2024-020",
+    "customer_id": "CUST009",
+    "items": [
+      {"name": "Scented Candle Set", "category": "home_and_kitchen", "price": 44.99, "quantity": 1, "is_final_sale": false},
+      {"name": "Throw Pillow Covers", "category": "home_and_kitchen", "price": 29.99, "quantity": 2, "is_final_sale": false}
+    ],
+    "order_date": "2025-05-15",
+    "delivery_date": "2025-05-19",
+    "status": "delivered",
+    "total_amount": 114.97,
+    "shipping_cost": 10.00,
+    "payment_method": "credit_card"
+  },
+  {
+    "order_id": "ORD-2024-021",
+    "customer_id": "CUST010",
+    "items": [
+      {"name": "Wireless Gaming Mouse", "category": "electronics", "price": 69.99, "quantity": 1, "is_final_sale": false}
+    ],
+    "order_date": "2025-05-01",
+    "delivery_date": "2025-05-05",
+    "status": "delivered",
+    "total_amount": 79.99,
+    "shipping_cost": 10.00,
+    "payment_method": "credit_card"
+  },
+  {
+    "order_id": "ORD-2024-022",
+    "customer_id": "CUST010",
+    "items": [
+      {"name": "Camping Tent 4-Person", "category": "sports_and_outdoors", "price": 199.99, "quantity": 1, "is_final_sale": false}
+    ],
+    "order_date": "2025-03-20",
+    "delivery_date": "2025-03-25",
+    "status": "delivered",
+    "total_amount": 214.99,
+    "shipping_cost": 15.00,
+    "payment_method": "debit_card"
+  },
+  {
+    "order_id": "ORD-2024-023",
+    "customer_id": "CUST011",
+    "items": [
+      {"name": "Diamond Pendant Necklace", "category": "clothing", "price": 899.99, "quantity": 1, "is_final_sale": false}
+    ],
+    "order_date": "2025-05-18",
+    "delivery_date": "2025-05-22",
+    "status": "delivered",
+    "total_amount": 919.99,
+    "shipping_cost": 20.00,
+    "payment_method": "credit_card"
+  },
+  {
+    "order_id": "ORD-2024-024",
+    "customer_id": "CUST011",
+    "items": [
+      {"name": "Espresso Machine Deluxe", "category": "home_and_kitchen", "price": 549.99, "quantity": 1, "is_final_sale": false}
+    ],
+    "order_date": "2025-04-20",
+    "delivery_date": "2025-04-25",
+    "status": "delivered",
+    "total_amount": 567.49,
+    "shipping_cost": 17.50,
+    "payment_method": "credit_card"
+  },
+  {
+    "order_id": "ORD-2024-025",
+    "customer_id": "CUST011",
+    "items": [
+      {"name": "Vintage Wine Collection - Limited", "category": "perishable", "price": 189.99, "quantity": 1, "is_final_sale": true}
+    ],
+    "order_date": "2025-05-01",
+    "delivery_date": "2025-05-06",
+    "status": "delivered",
+    "total_amount": 204.99,
+    "shipping_cost": 15.00,
+    "payment_method": "credit_card"
+  },
+  {
+    "order_id": "ORD-2024-026",
+    "customer_id": "CUST012",
+    "items": [
+      {"name": "Programming Book Bundle", "category": "books_and_media", "price": 89.99, "quantity": 1, "is_final_sale": false}
+    ],
+    "order_date": "2025-05-10",
+    "delivery_date": "2025-05-14",
+    "status": "delivered",
+    "total_amount": 97.99,
+    "shipping_cost": 8.00,
+    "payment_method": "debit_card"
+  },
+  {
+    "order_id": "ORD-2024-027",
+    "customer_id": "CUST012",
+    "items": [
+      {"name": "Mechanical Keyboard RGB", "category": "electronics", "price": 149.99, "quantity": 1, "is_final_sale": false}
+    ],
+    "order_date": "2025-04-28",
+    "delivery_date": "2025-05-02",
+    "status": "delivered",
+    "total_amount": 159.99,
+    "shipping_cost": 10.00,
+    "payment_method": "credit_card"
+  },
+  {
+    "order_id": "ORD-2024-028",
+    "customer_id": "CUST013",
+    "items": [
+      {"name": "Resistance Band Set", "category": "sports_and_outdoors", "price": 34.99, "quantity": 1, "is_final_sale": false},
+      {"name": "Foam Roller", "category": "sports_and_outdoors", "price": 24.99, "quantity": 1, "is_final_sale": false}
+    ],
+    "order_date": "2025-05-12",
+    "delivery_date": "2025-05-16",
+    "status": "delivered",
+    "total_amount": 67.98,
+    "shipping_cost": 8.00,
+    "payment_method": "credit_card"
+  },
+  {
+    "order_id": "ORD-2024-029",
+    "customer_id": "CUST013",
+    "items": [
+      {"name": "Air Purifier HEPA", "category": "home_and_kitchen", "price": 229.99, "quantity": 1, "is_final_sale": false}
+    ],
+    "order_date": "2025-04-18",
+    "delivery_date": "2025-04-22",
+    "status": "delivered",
+    "total_amount": 247.49,
+    "shipping_cost": 17.50,
+    "payment_method": "credit_card"
+  },
+  {
+    "order_id": "ORD-2024-030",
+    "customer_id": "CUST013",
+    "items": [
+      {"name": "Swimwear Collection", "category": "clothing", "price": 75.00, "quantity": 1, "is_final_sale": true}
+    ],
+    "order_date": "2025-05-20",
+    "delivery_date": "2025-05-24",
+    "status": "delivered",
+    "total_amount": 83.00,
+    "shipping_cost": 8.00,
+    "payment_method": "credit_card"
+  },
+  {
+    "order_id": "ORD-2024-031",
+    "customer_id": "CUST014",
+    "items": [
+      {"name": "Graphic Novel Anthology", "category": "books_and_media", "price": 29.99, "quantity": 1, "is_final_sale": false}
+    ],
+    "order_date": "2025-05-22",
+    "delivery_date": "2025-05-26",
+    "status": "delivered",
+    "total_amount": 35.99,
+    "shipping_cost": 6.00,
+    "payment_method": "debit_card"
+  },
+  {
+    "order_id": "ORD-2024-032",
+    "customer_id": "CUST015",
+    "items": [
+      {"name": "Ceramic Dinner Set 16-Piece", "category": "home_and_kitchen", "price": 119.99, "quantity": 1, "is_final_sale": false}
+    ],
+    "order_date": "2025-05-05",
+    "delivery_date": "2025-05-09",
+    "status": "delivered",
+    "total_amount": 134.99,
+    "shipping_cost": 15.00,
+    "payment_method": "credit_card"
+  },
+  {
+    "order_id": "ORD-2024-033",
+    "customer_id": "CUST015",
+    "items": [
+      {"name": "Wool Coat", "category": "clothing", "price": 275.00, "quantity": 1, "is_final_sale": false}
+    ],
+    "order_date": "2025-04-10",
+    "delivery_date": "2025-04-14",
+    "status": "delivered",
+    "total_amount": 290.00,
+    "shipping_cost": 15.00,
+    "payment_method": "credit_card"
+  },
+  {
+    "order_id": "ORD-2024-034",
+    "customer_id": "CUST015",
+    "items": [
+      {"name": "Fitness Tracker Band", "category": "electronics", "price": 59.99, "quantity": 1, "is_final_sale": false}
+    ],
+    "order_date": "2025-05-20",
+    "delivery_date": "2025-05-24",
+    "status": "delivered",
+    "total_amount": 67.99,
+    "shipping_cost": 8.00,
+    "payment_method": "debit_card"
+  },
+  {
+    "order_id": "ORD-2024-035",
+    "customer_id": "CUST001",
+    "items": [
+      {"name": "Organic Chocolate Gift Box", "category": "perishable", "price": 49.99, "quantity": 1, "is_final_sale": false}
+    ],
+    "order_date": "2025-05-18",
+    "delivery_date": "2025-05-22",
+    "status": "delivered",
+    "total_amount": 57.99,
+    "shipping_cost": 8.00,
+    "payment_method": "credit_card"
+  },
+  {
+    "order_id": "ORD-2024-036",
+    "customer_id": "CUST005",
+    "items": [
+      {"name": "Laptop Stand Adjustable", "category": "electronics", "price": 49.99, "quantity": 1, "is_final_sale": false},
+      {"name": "Desk Organizer", "category": "home_and_kitchen", "price": 34.99, "quantity": 1, "is_final_sale": false}
+    ],
+    "order_date": "2025-03-10",
+    "delivery_date": "2025-03-15",
+    "status": "delivered",
+    "total_amount": 94.98,
+    "shipping_cost": 10.00,
+    "payment_method": "credit_card"
+  },
+  {
+    "order_id": "ORD-2024-037",
+    "customer_id": "CUST009",
+    "items": [
+      {"name": "Luxury Bath Towel Set", "category": "home_and_kitchen", "price": 89.99, "quantity": 1, "is_final_sale": false}
+    ],
+    "order_date": "2025-05-22",
+    "delivery_date": "2025-05-26",
+    "status": "delivered",
+    "total_amount": 99.99,
+    "shipping_cost": 10.00,
+    "payment_method": "credit_card"
+  },
+  {
+    "order_id": "ORD-2024-038",
+    "customer_id": "CUST003",
+    "items": [
+      {"name": "Tablet Pro 11-inch", "category": "electronics", "price": 599.99, "quantity": 1, "is_final_sale": false},
+      {"name": "Tablet Stylus Pen", "category": "electronics", "price": 79.99, "quantity": 1, "is_final_sale": false}
+    ],
+    "order_date": "2025-05-22",
+    "delivery_date": "2025-05-26",
+    "status": "delivered",
+    "total_amount": 697.48,
+    "shipping_cost": 17.50,
+    "payment_method": "credit_card"
+  },
+  {
+    "order_id": "ORD-2024-039",
+    "customer_id": "CUST006",
+    "items": [
+      {"name": "Board Game Collection", "category": "books_and_media", "price": 54.99, "quantity": 1, "is_final_sale": false}
+    ],
+    "order_date": "2025-05-18",
+    "delivery_date": "2025-05-22",
+    "status": "delivered",
+    "total_amount": 62.99,
+    "shipping_cost": 8.00,
+    "payment_method": "debit_card"
+  },
+  {
+    "order_id": "ORD-2024-040",
+    "customer_id": "CUST010",
+    "items": [
+      {"name": "Safety Helmet Mountain Bike", "category": "sports_and_outdoors", "price": 64.99, "quantity": 1, "is_final_sale": false}
+    ],
+    "order_date": "2025-05-15",
+    "delivery_date": "2025-05-19",
+    "status": "delivered",
+    "total_amount": 74.99,
+    "shipping_cost": 10.00,
+    "payment_method": "credit_card"
+  },
+  {
+    "order_id": "ORD-2024-041",
+    "customer_id": "CUST004",
+    "items": [
+      {"name": "Denim Jacket Classic", "category": "clothing", "price": 85.00, "quantity": 1, "is_final_sale": false}
+    ],
+    "order_date": "2025-01-15",
+    "delivery_date": "2025-01-20",
+    "status": "delivered",
+    "total_amount": 95.00,
+    "shipping_cost": 10.00,
+    "payment_method": "credit_card"
+  },
+  {
+    "order_id": "ORD-2024-042",
+    "customer_id": "CUST002",
+    "items": [
+      {"name": "Protein Powder Vanilla 5lb", "category": "perishable", "price": 54.99, "quantity": 1, "is_final_sale": false}
+    ],
+    "order_date": "2025-05-20",
+    "delivery_date": "2025-05-24",
+    "status": "delivered",
+    "total_amount": 62.99,
+    "shipping_cost": 8.00,
+    "payment_method": "debit_card"
+  },
+  {
+    "order_id": "ORD-2024-043",
+    "customer_id": "CUST011",
+    "items": [
+      {"name": "Designer Sunglasses", "category": "clothing", "price": 320.00, "quantity": 1, "is_final_sale": false},
+      {"name": "Sunglasses Case", "category": "clothing", "price": 25.00, "quantity": 1, "is_final_sale": false}
+    ],
+    "order_date": "2025-05-10",
+    "delivery_date": "2025-05-14",
+    "status": "delivered",
+    "total_amount": 355.00,
+    "shipping_cost": 10.00,
+    "payment_method": "credit_card"
+  },
+  {
+    "order_id": "ORD-2024-044",
+    "customer_id": "CUST007",
+    "items": [
+      {"name": "Robot Vacuum Cleaner", "category": "home_and_kitchen", "price": 449.99, "quantity": 1, "is_final_sale": false}
+    ],
+    "order_date": "2025-04-28",
+    "delivery_date": "2025-05-02",
+    "status": "delivered",
+    "total_amount": 467.49,
+    "shipping_cost": 17.50,
+    "payment_method": "credit_card"
+  },
+  {
+    "order_id": "ORD-2024-045",
+    "customer_id": "CUST014",
+    "items": [
+      {"name": "Wireless Earbuds Basic", "category": "electronics", "price": 49.99, "quantity": 1, "is_final_sale": false}
+    ],
+    "order_date": "2025-05-25",
+    "delivery_date": null,
+    "status": "in_transit",
+    "total_amount": 55.99,
+    "shipping_cost": 6.00,
+    "payment_method": "debit_card"
+  }
+]

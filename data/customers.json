@@ -1,0 +1,167 @@
+[
+  {
+    "id": "CUST001",
+    "name": "Sarah Mitchell",
+    "email": "sarah.mitchell@email.com",
+    "phone": "+1-555-0101",
+    "membership_tier": "premium",
+    "account_created": "2023-01-15",
+    "total_orders": 24,
+    "total_spent": 4820.50,
+    "address": "142 Maple Drive, Portland, OR 97201"
+  },
+  {
+    "id": "CUST002",
+    "name": "James Rodriguez",
+    "email": "j.rodriguez@email.com",
+    "phone": "+1-555-0102",
+    "membership_tier": "standard",
+    "account_created": "2023-06-20",
+    "total_orders": 8,
+    "total_spent": 1245.00,
+    "address": "88 Oak Street, Austin, TX 78701"
+  },
+  {
+    "id": "CUST003",
+    "name": "Emily Chen",
+    "email": "emily.chen@email.com",
+    "phone": "+1-555-0103",
+    "membership_tier": "vip",
+    "account_created": "2022-03-10",
+    "total_orders": 47,
+    "total_spent": 12350.75,
+    "address": "500 Pine Avenue, San Francisco, CA 94102"
+  },
+  {
+    "id": "CUST004",
+    "name": "Michael Thompson",
+    "email": "m.thompson@email.com",
+    "phone": "+1-555-0104",
+    "membership_tier": "standard",
+    "account_created": "2024-01-05",
+    "total_orders": 3,
+    "total_spent": 289.99,
+    "address": "221 Elm Court, Chicago, IL 60601"
+  },
+  {
+    "id": "CUST005",
+    "name": "Priya Sharma",
+    "email": "priya.sharma@email.com",
+    "phone": "+1-555-0105",
+    "membership_tier": "premium",
+    "account_created": "2023-04-18",
+    "total_orders": 19,
+    "total_spent": 3670.25,
+    "address": "75 Cedar Lane, Seattle, WA 98101"
+  },
+  {
+    "id": "CUST006",
+    "name": "David Kim",
+    "email": "david.kim@email.com",
+    "phone": "+1-555-0106",
+    "membership_tier": "standard",
+    "account_created": "2024-03-22",
+    "total_orders": 5,
+    "total_spent": 845.50,
+    "address": "33 Birch Road, Denver, CO 80201"
+  },
+  {
+    "id": "CUST007",
+    "name": "Jessica Nguyen",
+    "email": "j.nguyen@email.com",
+    "phone": "+1-555-0107",
+    "membership_tier": "vip",
+    "account_created": "2022-08-01",
+    "total_orders": 38,
+    "total_spent": 9450.00,
+    "address": "1200 Willow Street, New York, NY 10001"
+  },
+  {
+    "id": "CUST008",
+    "name": "Robert Williams",
+    "email": "r.williams@email.com",
+    "phone": "+1-555-0108",
+    "membership_tier": "standard",
+    "account_created": "2024-06-10",
+    "total_orders": 2,
+    "total_spent": 159.98,
+    "address": "456 Spruce Way, Miami, FL 33101"
+  },
+  {
+    "id": "CUST009",
+    "name": "Amanda Foster",
+    "email": "a.foster@email.com",
+    "phone": "+1-555-0109",
+    "membership_tier": "premium",
+    "account_created": "2023-09-05",
+    "total_orders": 15,
+    "total_spent": 2890.00,
+    "address": "89 Aspen Circle, Nashville, TN 37201"
+  },
+  {
+    "id": "CUST010",
+    "name": "Carlos Mendez",
+    "email": "c.mendez@email.com",
+    "phone": "+1-555-0110",
+    "membership_tier": "standard",
+    "account_created": "2024-02-14",
+    "total_orders": 6,
+    "total_spent": 1120.75,
+    "address": "17 Redwood Terrace, Phoenix, AZ 85001"
+  },
+  {
+    "id": "CUST011",
+    "name": "Lauren Davis",
+    "email": "l.davis@email.com",
+    "phone": "+1-555-0111",
+    "membership_tier": "vip",
+    "account_created": "2022-11-30",
+    "total_orders": 52,
+    "total_spent": 15200.00,
+    "address": "602 Magnolia Boulevard, Boston, MA 02101"
+  },
+  {
+    "id": "CUST012",
+    "name": "Andrew Park",
+    "email": "a.park@email.com",
+    "phone": "+1-555-0112",
+    "membership_tier": "standard",
+    "account_created": "2024-04-01",
+    "total_orders": 4,
+    "total_spent": 520.00,
+    "address": "41 Chestnut Drive, Minneapolis, MN 55401"
+  },
+  {
+    "id": "CUST013",
+    "name": "Olivia Brown",
+    "email": "o.brown@email.com",
+    "phone": "+1-555-0113",
+    "membership_tier": "premium",
+    "account_created": "2023-07-12",
+    "total_orders": 21,
+    "total_spent": 4100.50,
+    "address": "308 Dogwood Lane, Atlanta, GA 30301"
+  },
+  {
+    "id": "CUST014",
+    "name": "Daniel Lee",
+    "email": "d.lee@email.com",
+    "phone": "+1-555-0114",
+    "membership_tier": "standard",
+    "account_created": "2024-05-20",
+    "total_orders": 1,
+    "total_spent": 79.99,
+    "address": "125 Poplar Court, San Diego, CA 92101"
+  },
+  {
+    "id": "CUST015",
+    "name": "Rachel Green",
+    "email": "r.green@email.com",
+    "phone": "+1-555-0115",
+    "membership_tier": "premium",
+    "account_created": "2023-02-28",
+    "total_orders": 16,
+    "total_spent": 3340.25,
+    "address": "77 Sycamore Place, Philadelphia, PA 19101"
+  }
+]
