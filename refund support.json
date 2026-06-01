@@ -1,0 +1,421 @@
+{
+  "name": "refund support",
+  "nodes": [
+    {
+      "parameters": {
+        "httpMethod": "POST",
+        "path": "refund-webhook",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 2.1,
+      "position": [
+        0,
+        0
+      ],
+      "id": "fb3491d0-05cc-4eba-86d9-99b98586d4a1",
+      "name": "Webhook",
+      "webhookId": "040e5523-0d37-4d40-8309-43b9027db1af"
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "https://08a3-103-58-153-220.ngrok-free.app/api/chat",
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "={\n  \"message\": \"{{ $json.body.message }}\",\n  \"session_id\": \"{{ $json.body.session_id }}\"\n}",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.4,
+      "position": [
+        208,
+        0
+      ],
+      "id": "ee1d171e-bb8b-49c1-a127-aaba2615f888",
+      "name": "HTTP Request"
+    },
+    {
+      "parameters": {
+        "jsCode": "const response = $json.response || $json.message || \"\";\n\nlet decision = \"escalate\";\nif (response.toLowerCase().includes(\"approved\")) decision = \"approved\";\nif (response.toLowerCase().includes(\"denied\") || \n    response.toLowerCase().includes(\"not eligible\")) decision = \"rejected\";\n\nreturn { decision, response, ...$json };"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        416,
+        0
+      ],
+      "id": "b130dd7a-225a-416a-a2ec-f04501a75aef",
+      "name": "Code in JavaScript"
+    },
+    {
+      "parameters": {
+        "rules": {
+          "values": [
+            {
+              "conditions": {
+                "options": {
+                  "caseSensitive": true,
+                  "leftValue": "",
+                  "typeValidation": "strict",
+                  "version": 3
+                },
+                "conditions": [
+                  {
+                    "leftValue": "={{ $json.decision }}",
+                    "rightValue": "approved",
+                    "operator": {
+                      "type": "string",
+                      "operation": "equals"
+                    },
+                    "id": "5839ec69-1fb1-4834-888c-8fe7d21ab8e9"
+                  }
+                ],
+                "combinator": "and"
+              }
+            },
+            {
+              "conditions": {
+                "options": {
+                  "caseSensitive": true,
+                  "leftValue": "",
+                  "typeValidation": "strict",
+                  "version": 3
+                },
+                "conditions": [
+                  {
+                    "id": "1230cab9-8d90-4148-bdd5-f048f9e6ce5a",
+                    "leftValue": "={{ $json.decision }}",
+                    "rightValue": "rejected",
+                    "operator": {
+                      "type": "string",
+                      "operation": "equals",
+                      "name": "filter.operator.equals"
+                    }
+                  }
+                ],
+                "combinator": "and"
+              }
+            },
+            {
+              "conditions": {
+                "options": {
+                  "caseSensitive": true,
+                  "leftValue": "",
+                  "typeValidation": "strict",
+                  "version": 3
+                },
+                "conditions": [
+                  {
+                    "id": "37ddf70b-79c4-4351-971c-ba3f506d4ead",
+                    "leftValue": "={{ $json.decision }}",
+                    "rightValue": "escalate",
+                    "operator": {
+                      "type": "string",
+                      "operation": "equals",
+                      "name": "filter.operator.equals"
+                    }
+                  }
+                ],
+                "combinator": "and"
+              }
+            }
+          ]
+        },
+        "options": {
+          "fallbackOutput": "=escalate"
+        }
+      },
+      "type": "n8n-nodes-base.switch",
+      "typeVersion": 3.4,
+      "position": [
+        624,
+        0
+      ],
+      "id": "39eccd7a-10ea-4a53-9d52-bd669d2690fc",
+      "name": "Switch"
+    },
+    {
+      "parameters": {
+        "sendTo": "={{ $json.body.email }}",
+        "subject": "Your Refund has been Approved ✅",
+        "emailType": "text",
+        "message": "={{ $json.response }}",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.gmail",
+      "typeVersion": 2.2,
+      "position": [
+        832,
+        -112
+      ],
+      "id": "5f0e8424-117c-44fd-a7ce-1fc6b3c72b36",
+      "name": "Send a message",
+      "webhookId": "2677c81c-b207-459d-8bce-528e7be9a99f",
+      "credentials": {
+        "gmailOAuth2": {
+          "id": "ZRbSxFT7zPjtCN3u",
+          "name": "Gmail OAuth2 API"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "sendTo": "={{ $json.body.email }}",
+        "subject": "Update on Your Refund Request",
+        "emailType": "text",
+        "message": "={{ $json.response }}",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.gmail",
+      "typeVersion": 2.2,
+      "position": [
+        832,
+        0
+      ],
+      "id": "68fced0a-7be9-4148-8bdb-9e8fd49a0294",
+      "name": "Send a message1",
+      "webhookId": "12a85fee-c3dd-4a0f-acb7-dd6b7aa16ad2",
+      "credentials": {
+        "gmailOAuth2": {
+          "id": "ZRbSxFT7zPjtCN3u",
+          "name": "Gmail OAuth2 API"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "authentication": "oAuth2",
+        "select": "channel",
+        "channelId": {
+          "__rl": true,
+          "value": "C0B7ERE29JS",
+          "mode": "list",
+          "cachedResultName": "new-channel"
+        },
+        "text": "=🚨 High-value refund needs review          Customer: {{ $json.body.session_id }}          Agent Response: {{ $json.response }}",
+        "otherOptions": {}
+      },
+      "type": "n8n-nodes-base.slack",
+      "typeVersion": 2.5,
+      "position": [
+        832,
+        112
+      ],
+      "id": "a8c576dd-e525-4f4a-b081-7dda03ea7353",
+      "name": "Send a message2",
+      "webhookId": "53a9788e-8c10-46e2-84c5-c5199b8b801e",
+      "credentials": {
+        "slackOAuth2Api": {
+          "id": "4ldWnTZzf4Pr4wzn",
+          "name": "Slack OAuth2 API"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "operation": "append",
+        "documentId": {
+          "__rl": true,
+          "value": "1CNeMusY4YTX2JnjEJY2E4O03QfAK0KxDCu1KmaI5ZTc",
+          "mode": "list",
+          "cachedResultName": "Refunds detail",
+          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/1CNeMusY4YTX2JnjEJY2E4O03QfAK0KxDCu1KmaI5ZTc/edit?usp=drivesdk"
+        },
+        "sheetName": {
+          "__rl": true,
+          "value": "gid=0",
+          "mode": "list",
+          "cachedResultName": "Sheet1",
+          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/1CNeMusY4YTX2JnjEJY2E4O03QfAK0KxDCu1KmaI5ZTc/edit#gid=0"
+        },
+        "columns": {
+          "mappingMode": "defineBelow",
+          "value": {
+            "Timestamp": "={{ $now }}",
+            "Session ID": "={{ $json.body.session_id }}",
+            "Message": "={{ $json.body.message }}",
+            "Decision": "={{ $json.decision }}",
+            "Agent Response": "={{ $json.response }}"
+          },
+          "matchingColumns": [],
+          "schema": [
+            {
+              "id": "Timestamp",
+              "displayName": "Timestamp",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            },
+            {
+              "id": "Session ID",
+              "displayName": "Session ID",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            },
+            {
+              "id": "Message",
+              "displayName": "Message",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            },
+            {
+              "id": "Decision",
+              "displayName": "Decision",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            },
+            {
+              "id": "Agent Response",
+              "displayName": "Agent Response",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            }
+          ],
+          "attemptToConvertTypes": false,
+          "convertFieldsToString": false
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.googleSheets",
+      "typeVersion": 4.7,
+      "position": [
+        1104,
+        -32
+      ],
+      "id": "a9ce6557-dbe4-4df3-9f67-621ec470150a",
+      "name": "Append row in sheet",
+      "credentials": {
+        "googleSheetsOAuth2Api": {
+          "id": "QmXoAhxBSOJLXFFw",
+          "name": "Google Sheets OAuth2 API"
+        }
+      }
+    }
+  ],
+  "pinData": {},
+  "connections": {
+    "Webhook": {
+      "main": [
+        [
+          {
+            "node": "HTTP Request",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "HTTP Request": {
+      "main": [
+        [
+          {
+            "node": "Code in JavaScript",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Code in JavaScript": {
+      "main": [
+        [
+          {
+            "node": "Switch",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Switch": {
+      "main": [
+        [
+          {
+            "node": "Send a message",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Send a message1",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Send a message2",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Send a message": {
+      "main": [
+        [
+          {
+            "node": "Append row in sheet",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Send a message1": {
+      "main": [
+        [
+          {
+            "node": "Append row in sheet",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Send a message2": {
+      "main": [
+        [
+          {
+            "node": "Append row in sheet",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": true,
+  "settings": {
+    "executionOrder": "v1",
+    "binaryMode": "separate"
+  },
+  "versionId": "f47b61a7-699e-49fb-bf47-21937fb81ab0",
+  "meta": {
+    "templateCredsSetupCompleted": true,
+    "instanceId": "30a37ad5e474be616ae82275b410ea259e52ff2871ac637458b85607067beab0"
+  },
+  "id": "zCeNsviDEaYXmrmt",
+  "tags": []
+}
